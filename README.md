@@ -1,6 +1,6 @@
 # tttaskd
 
-tttaskd is a unfinished GTD app, built with React and Redux. It's intended to be paired with an API server.
+tttaskd is a unfinished GTD app, built with React and Redux. It's intended to be paired with an [API server](https://github.com/imkmf/tttaskd-backend).
 
 This is a fairly large React/Redux application that became pretty exhausting to write. Bummer! Instead of hiding it in Dropbox, I thought I'd share it in case other React developers wanted to see functional code for authorizing with a backend API via JWT, splitting routes via components, etc etc etc
 
