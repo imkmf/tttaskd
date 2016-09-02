@@ -1,0 +1,17 @@
+.sidebar {
+  left: 0 !important;
+}
+
+.headerLink {
+  color: rgba(0,0,0,.87); // Cribbed from defaults
+}
+
+.activeRoute {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.closeIcon {
+  float: right;
+  cursor: pointer;
+}

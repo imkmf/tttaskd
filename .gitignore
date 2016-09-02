@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+
+node_modules
+
+dist
+coverage
+
+src/lib/version.js
+
+# original, private git history
+.oldgit

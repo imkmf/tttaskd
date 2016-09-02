@@ -1,0 +1,62 @@
+:global {
+  @import 'base';
+  @import 'colors';
+
+  $brand: #2ECC40;
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, button, p, span {
+    font-family: 'Fira Sans', 'Helvetica', sans-serif;
+  }
+
+  a, .btn-link {
+    @extend .green;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  // Make the sidebar full height
+  .ui.sticky.fixed.top {
+    height: 100%;
+  }
+
+  .large-text {
+    font-size: 1.2rem !important;
+  }
+
+  .leftPad {
+    margin-left: 15rem !important;
+  }
+
+  a.active {
+    text-decoration: underline !important;
+  }
+
+  #account {
+    height: 100%;
+
+    div.grid {
+      height: 100%;
+    }
+
+    .column {
+      max-width: 450px;
+    }
+  }
+}

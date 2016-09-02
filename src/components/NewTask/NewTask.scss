@@ -1,0 +1,14 @@
+@import 'colors';
+
+.task {
+  height: 160px;
+  margin: 10px 0;
+}
+
+.taskForm {
+  border-left-width: 1px;
+  border-left-style: solid;
+  @extend .border--blue;
+
+  padding-left: 20px;
+}

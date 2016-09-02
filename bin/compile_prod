@@ -1,0 +1,14 @@
+rm src/lib/version.js
+echo "const versionSha = '$(git rev-parse --short HEAD)'\nexport default versionSha" >> src/lib/version.js
+
+rm -rf dist/*
+
+NODE_ENV=production npm run compile
+
+if ! [ -x "$(command -v git)" ]; then
+  echo "awscli is not installed. Exiting before deploy. Try 'brew install awscli'." >&2
+  exit 1
+fi
+
+# S3_URL should be format s3://<bucketname>
+aws s3 sync dist $S3_URL --delete

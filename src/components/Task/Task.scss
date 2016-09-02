@@ -1,0 +1,32 @@
+@import 'colors';
+@import 'variables';
+
+.checkboxContainer {
+  text-align: center;
+}
+
+.task {
+  @extend .border--gray;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.overdueBorder {
+  border-top: 2px solid $brand !important;
+}
+
+.overdue {
+  color: $brand-text;
+}
+
+.taskRow:first-child {
+  padding-top: .5em !important;
+}
+
+.taskRow {
+  padding-top: .1em !important;
+  padding-bottom: .5em !important;
+}
+
+
